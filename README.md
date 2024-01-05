@@ -12,3 +12,13 @@ streamlit run app.py
 ```
 
 ### 3. Add `invoice` documents accepted in `jpg`, `jpeg`, `png` formats
+
+### 4. Screenshots
+![Initial screen with query](Screenshots\ss1.png)
+
+![What we expect the result to identify](Screenshots\ss2-what-we-expect.png)
+
+![Viola!!](Screenshots\result.png)
+
+
+Thank you!
