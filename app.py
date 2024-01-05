@@ -29,7 +29,7 @@ def get_gemini_response(input_text, image_data, prompt):
     try:
         response = model.generate_content([input_text, image_data[0], prompt])
         return response.text
-    except Exception as e:
+    except Exception as e: # pylint: disable=broad-except
         return f"An error occurred while generating response: {str(e)}"
 
 def input_image_setup(uploaded_file):
@@ -71,7 +71,7 @@ def main():
             st.write(response)
         except FileNotFoundError as e:
             st.error(str(e))
-        except Exception as e:
+        except Exception as e: # pylint: disable=broad-except
             st.error(f"An error occurred: {str(e)}")
 
 if __name__ == "__main__":
